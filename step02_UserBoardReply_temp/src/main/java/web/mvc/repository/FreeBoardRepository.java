@@ -27,8 +27,9 @@ public interface FreeBoardRepository extends JpaRepository<FreeBoard, Long> ,
 
 
     //페이징처리/////////////////////////
-    @Query(value = "select f from FreeBoard f left join fetch f.repliesList"
-            ,countQuery = "select count(*) form FreeBoard f left join fetch f.repliesList")
+    @Query(value = "select distinct f from FreeBoard f left join fetch f.repliesList"
+            //,countQuery = "select count(distinct f.bno) from FreeBoard f left join fetch f.repliesList"
+    )
     Page<FreeBoard> join02(Pageable pageable);
 
 }

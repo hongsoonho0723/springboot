@@ -60,8 +60,8 @@ public class FreeBoard { //db에 free_board
 	 * 	CascadeType.REFRESH: 부모 엔티티를 새로 고칠 때 연관된 자식 엔티티도 함께 새로 고칩니다.
 	 * 	CascadeType.DETACH: 부모 엔티티를 분리할 때 연관된 자식 엔티티도 함께 분리합니다.
 	 * */
-	//@OneToMany(mappedBy = "freeBoard" , cascade = CascadeType.ALL) // 참조되있는걸 지울 때 참조 위배되는걸 설정한다
-	@OneToMany(mappedBy = "freeBoard") //  지연로딩
+	@OneToMany(mappedBy = "freeBoard" , cascade = CascadeType.ALL) // 참조되있는걸 지울 때 참조 위배되는걸 설정한다
+	//@OneToMany(mappedBy = "freeBoard") //  지연로딩
 	// Reply.java 에@JoinColumn(name = "free_bno")
 	//private FreeBoard freeBoard;
 
