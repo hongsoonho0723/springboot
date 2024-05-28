@@ -38,7 +38,7 @@ public class FreeBoardServiceImpl implements FreeBoardService {
 
     @Override
     public Page<FreeBoard> selectAll(Pageable pageable) {
-        return freeBoardRepository.findAll(pageable); // findAll(pageable)을 쓰면
+        return freeBoardRepository.findAll(pageable); // spring data JPA제공하는 메소드
     }
 
     @Override
