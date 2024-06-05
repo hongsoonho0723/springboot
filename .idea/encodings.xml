@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/User_Board_Reply/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/step01_bootJPA/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/step02_UserBoardReply_02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/step02_UserBoardReply_temp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/step03_Security_JWT/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/step04_Axios/src/main/java" charset="UTF-8" />
+  </component>
+</project>

@@ -27,6 +27,7 @@ public class Member {
     @Column(length = 20)
     private String name;
     private String address;
+
     private String role;
     //role은 ROLE_USER설정
     @CreationTimestamp

@@ -14,13 +14,8 @@ import web.mvc.repository.MemberRepository;
 @Service
 @Slf4j
 public class MemberServiceImpl implements MemberService {
-
-
-
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
-
-
 
     @Autowired
     private MemberRepository memberRepository;
@@ -28,15 +23,17 @@ public class MemberServiceImpl implements MemberService {
     @Autowired
     private PasswordEncoder pe;
 
-
+    @Transactional
     @Override
     public String duplicateCheck(String id) {
-        return "";
+        Member member = memberRepository.duplicateCheck(id);
+        System.out.println("member = "+member);
+        if(member == null) return "사용가능합니다";
+        else return "중복입니다";
+
     }
 
-
-
-
+    @Transactional
     @Override
     public void signUp(Member member) {
         if(memberRepository.existsById(member.getId())){

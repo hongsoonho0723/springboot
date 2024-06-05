@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/step04_Axios/pom.xml" />
+        <option value="$PROJECT_DIR$/step01_bootJPA/pom.xml" />
+        <option value="$PROJECT_DIR$/User_Board_Reply/pom.xml" />
+        <option value="$PROJECT_DIR$/step03_Security_JWT/pom.xml" />
+        <option value="$PROJECT_DIR$/step02_UserBoardReply_02/pom.xml" />
+        <option value="$PROJECT_DIR$/step02_UserBoardReply_temp/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

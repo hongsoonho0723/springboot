@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="step03_Security_JWT" />
+        <module name="step04_Axios" />
+        <module name="User_Board_Reply" />
+        <module name="step02_UserBoardReply" />
+        <module name="step02_UserBoardReply (1)" />
+        <module name="step01_bootJPA" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="User_Board_Reply" options="-parameters" />
+      <module name="step01_bootJPA" options="-parameters" />
+      <module name="step02_UserBoardReply" options="-parameters" />
+      <module name="step02_UserBoardReply (1)" options="-parameters" />
+      <module name="step03_Security_JWT" options="-parameters" />
+      <module name="step04_Axios" options="-parameters" />
+    </option>
+  </component>
+</project>

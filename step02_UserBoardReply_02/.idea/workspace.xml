@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5ede18d-d0d5-4782-9d76-e4ff2dae852f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../step03_Security_JWT/src/main/java/web/mvc/Step03SecurityJwtApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../step02_UserBoardReply_temp/src/main/java/web/mvc/aop/SessionCheckAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../step02_UserBoardReply_temp/src/main/java/web/mvc/aop/SessionCheckAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../step02_UserBoardReply_temp/src/main/java/web/mvc/config/Appconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../step02_UserBoardReply_temp/src/main/java/web/mvc/config/Appconfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../step02_UserBoardReply_temp/src/main/java/web/mvc/repository/FreeBoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../step02_UserBoardReply_temp/src/main/java/web/mvc/repository/FreeBoardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../step02_UserBoardReply_temp/src/main/java/web/mvc/service/FreeBoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../step02_UserBoardReply_temp/src/main/java/web/mvc/service/FreeBoardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../step02_UserBoardReply_temp/target/classes/web/mvc/aop/SessionCheckAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../step02_UserBoardReply_temp/target/classes/web/mvc/aop/SessionCheckAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../step02_UserBoardReply_temp/target/classes/web/mvc/config/Appconfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../step02_UserBoardReply_temp/target/classes/web/mvc/config/Appconfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../step02_UserBoardReply_temp/target/classes/web/mvc/repository/FreeBoardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../step02_UserBoardReply_temp/target/classes/web/mvc/repository/FreeBoardRepository.class" afterDir="false" />
-    </list>
+    <list default="true" id="c5ede18d-d0d5-4782-9d76-e4ff2dae852f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,30 +39,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.UserBoardReplyTests.aa.executor": "Run",
-    "JUnit.UserBoardReplyTests.boardInsert.executor": "Run",
-    "JUnit.UserBoardReplyTests.userInsert.executor": "Run",
-    "Maven.step02_UserBoardReply [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Step02UserBoardReplyApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Edu/Spring/springBoot/IntellijWork/step03_Security_JWT",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.UserBoardReplyTests.aa.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserBoardReplyTests.boardInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserBoardReplyTests.userInsert.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.step02_UserBoardReply [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Step02UserBoardReplyApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Edu/Project/final/api-server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Edu\Spring\springBoot\IntellijWork\step02_UserBoardReply\src\main\resources\static" />
@@ -162,7 +153,9 @@
       <updated>1716506713388</updated>
       <workItem from="1716506714599" duration="23964000" />
       <workItem from="1716807027579" duration="1794000" />
-      <workItem from="1716854411154" duration="2183000" />
+      <workItem from="1716854411154" duration="2184000" />
+      <workItem from="1717402245187" duration="1281000" />
+      <workItem from="1717545763474" duration="783000" />
     </task>
     <servers />
   </component>

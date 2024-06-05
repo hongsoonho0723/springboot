@@ -1,5 +1,6 @@
 package web.mvc.config;
 
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
@@ -12,9 +13,13 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
 import web.mvc.jwt.JWTFilter;
 import web.mvc.jwt.JWTUtil;
 import web.mvc.jwt.LoginFilter;
+
+import java.util.Collections;
 
 @Configuration
 @EnableWebSecurity
@@ -42,6 +47,30 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        log.info("SecurityFilterChain filter chain call.....");
+        //////////////////////////////////////////////////////
+        //CORS 설정
+        http.cors((corsCustomizer ->
+                corsCustomizer.configurationSource(new CorsConfigurationSource() {
+                    @Override
+                    public CorsConfiguration
+                    getCorsConfiguration(HttpServletRequest request) {
+                        CorsConfiguration configuration = new CorsConfiguration();
+
+                        configuration.setAllowedOrigins(Collections.singletonList("http://localhost:3000"));
+
+                        configuration.setAllowedMethods(Collections.singletonList("*"));
+                        configuration.setAllowCredentials(true);
+
+                        configuration.setAllowedHeaders(Collections.singletonList("*"));
+                        configuration.setMaxAge(3600L);
+
+                        configuration.setExposedHeaders(Collections.singletonList("Authorization"));
+                        return configuration;
+                    }
+                })));
+
+
         //csrf disable
         http.csrf((auth) -> auth.disable()); // csrf 공격을 방어하기 위한 토큰 주고 받는 부분을 비활성화
 
@@ -62,13 +91,13 @@ public class SecurityConfig {
         http.sessionManagement((session) ->
                 session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
-    //필터 추가 LoginFilter()는 인자를 받음 (AuthenticationManager() 메소드에 authenticationConfiguration 객체를 넣어야함)
-    //addFilterAt // 은 UsernamePasswordAuthenticationFilter 의 자리에 LoginFilter가  실행되도록 설정하는 것
+        //필터 추가 LoginFilter()는 인자를 받음 (AuthenticationManager() 메소드에 authenticationConfiguration 객체를 넣어야함)
+        //addFilterAt // 은 UsernamePasswordAuthenticationFilter 의 자리에 LoginFilter가  실행되도록 설정하는 것
 
-    //JWTFilter 등록
-    http.addFilterBefore(new JWTFilter(jwtUtil), LoginFilter.class);
-    http.addFilterAt(new LoginFilter(authenticationManager(authenticationConfiguration),jwtUtil),UsernamePasswordAuthenticationFilter .class);
-    return http.build();
+        //JWTFilter 등록
+        http.addFilterBefore(new JWTFilter(jwtUtil), LoginFilter.class);
+        http.addFilterAt(new LoginFilter(authenticationManager(authenticationConfiguration), jwtUtil), UsernamePasswordAuthenticationFilter.class);
+        return http.build();
     }
 
 }

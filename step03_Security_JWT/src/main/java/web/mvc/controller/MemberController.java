@@ -1,12 +1,11 @@
 package web.mvc.controller;
 
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import web.mvc.domain.Member;
 import web.mvc.service.MemberService;
 
@@ -34,5 +33,12 @@ public class MemberController {
 
     return "addMember create";
     }*/
+
+    //중복체크
+    @GetMapping("/members/{id}")
+    public String duplicateIdCheck(@PathVariable String id) {
+        System.out.println("id = " + id);
+        return memberService.duplicateCheck(id);
+    }
 
 }
