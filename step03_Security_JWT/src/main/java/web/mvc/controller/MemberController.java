@@ -22,7 +22,9 @@ public class MemberController {
     * */
     @PostMapping("/members")
     public ResponseEntity<?> signUp(@RequestBody Member member) { //json전달
+        System.out.println("-------------------------------------------------");
         log.info("member = {}", member);
+        System.out.println("-------------------------------------------------");
         memberService.signUp(member);
         return ResponseEntity.status(HttpStatus.CREATED).body("OK");
     }

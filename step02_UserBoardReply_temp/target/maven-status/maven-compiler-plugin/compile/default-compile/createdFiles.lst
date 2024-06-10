@@ -20,6 +20,7 @@ web\mvc\domain\Reply.class
 web\mvc\exception\BasicException.class
 web\mvc\dto\FreeBoardDTO.class
 web\mvc\exception\ErrorCode.class
+web\mvc\domain\User$UserBuilder.class
 web\mvc\service\FreeBoardServiceImpl.class
 web\mvc\domain\FreeBoard$FreeBoardBuilder.class
 web\mvc\Step02UserBoardReplyApplication.class
