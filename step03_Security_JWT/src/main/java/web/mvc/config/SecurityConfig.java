@@ -84,7 +84,7 @@ public class SecurityConfig {
         http.authorizeHttpRequests((auth) ->
                 auth
                         .requestMatchers("/test", "/members",
-                                "/members/**", "/boards").permitAll()
+                                "/members/**", "/boards","/boards/board").permitAll()
                         .requestMatchers("/admin").hasRole("ADMIN")
                         .anyRequest().authenticated());
         //세션 설정 - JWT 를 이용 할것이기 때문에 stateless 설정
