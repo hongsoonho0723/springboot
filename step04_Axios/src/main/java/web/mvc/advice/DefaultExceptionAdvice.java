@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 
 @RestControllerAdvice
 public class DefaultExceptionAdvice {
+
     @ExceptionHandler({MemberAuthenticationException.class})
     public ProblemDetail signInExceptionHandle(MemberAuthenticationException e){
         ProblemDetail problemDetail = ProblemDetail.forStatus(e.getHttpStatus().value());
@@ -20,7 +21,6 @@ public class DefaultExceptionAdvice {
 
         return  problemDetail;
     }
-
 
 
 

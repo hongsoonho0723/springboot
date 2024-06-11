@@ -27,8 +27,8 @@ public class MemberServiceImpl implements MemberService {
     @Override
     public String duplicateCheck(String id) {
         Member member = memberRepository.duplicateCheck(id);
-        System.out.println("member = "+member);
-        if(member == null) return "사용가능합니다";
+        System.out.println("member = " + member);
+        if (member == null) return "사용가능합니다";
         else return "중복입니다";
 
     }
@@ -36,8 +36,8 @@ public class MemberServiceImpl implements MemberService {
     @Transactional
     @Override
     public void signUp(Member member) {
-        if(memberRepository.existsById(member.getId())){
-            throw new MemberAuthenticationException("아이디 중복입니다","Duplicate ID");
+        if (memberRepository.existsById(member.getId())) {
+            throw new MemberAuthenticationException("아이디 중복입니다", "Duplicate ID");
         }
 
         //비밀번호 암호화
